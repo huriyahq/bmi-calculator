@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- external stylesheet -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <main class="flex-column">
+            <article>
+                <section class="flex-column">
+                    <p id="instructions">
+                        <!-- user instructions generated via JS will display here -->
+                    </p>
+                    <!-- input fields for height and weight -->
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height-input" name="height" placeholder="Height">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight-input" name="weight" placeholder="Weight"><br/>
+                </section>
+                <!-- buttons to calculate BMI or reset input fields -->
+                <section class="buttons">
+                    <button onclick="calculateBMI()">Calculate</button>
+                    <button onclick="reset()">Reset</button>
+                </section>
+                <section>
+                    <p id="result" class="result-message">
+                        <!-- result will display here -->
+                    </p>
+                </section>
+            </article>
+        </main>
+        <!-- link for external JS -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>

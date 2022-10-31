@@ -1,0 +1,76 @@
+/* universal */
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#F2FAF0;
+    height: 100vh;
+    width: 100vw;
+    color: #FFF;
+    font-family: sans-serif;
+}
+
+/* flexbox */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* parts */
+main {
+    height: 100vh;
+    text-align: left;
+}
+
+article {
+    height: 100vh;
+    background-color: #61B2BD;
+    padding: 10%;
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px 1px #57AAB2;
+}
+
+/* inputs */
+label {
+    margin-top: 0.5em;
+}
+
+input {
+    border: 0.1em solid #DFF2D8;
+    text-align: center;
+    margin: 0.2em;
+    padding: 0.5em 0.7em;
+    outline-color: #CED097;
+    color: #3D4344;
+}
+
+/* buttons */
+button {
+    padding: 0.5em 0.7em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: transparent;
+    border: 0.1em solid #DFF2D8;
+    color: #DFF2D8;
+    box-shadow: 0px 8px 3px -3px #57AAB2;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    background-color: #DFF2D8;
+    color: #61B2BD;
+}
+
+button:active {
+    border: 0.1em solid #61B2BD;
+    box-shadow: none;
+}
+
+/* result message */
+.result-message {
+    margin-top: 2em;
+}
